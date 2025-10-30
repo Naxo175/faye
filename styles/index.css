@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap'); /* Fondamento */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto */
+
+body
+{
+    background-image: url("../images/decor/Decor1.png");
+    margin: 0;
+}
+
+
+section
+{
+    background-color: white;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+section h2
+{
+    text-align: center;
+    font-family: "Fondamento", cursive;
+    font-size: 42.1px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+section h3
+{
+    text-align: center;
+    font-family: "Fondamento", cursive;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+
+
+.slogan-container
+{
+    margin-top: 400px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.slogan
+{
+    color: #d6a913;
+    font-family: "Fondamento", cursive;
+    font-size: 70px;
+    margin: 0;
+}
+
+.slogan-sub
+{
+    color: rgb(214, 115, 22);
+    font-family: "Fondamento", cursive;
+    font-size: 30px;
+    margin: 0;
+}
+
+.main-products-container
+{
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.all-products-button-container
+{
+    text-align: center;
+}
+
+.all-products-button-container a
+{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    margin: 50px;
+}
+
+
+.product
+{
+    width: 300px;
+    height: 400px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product .img
+{
+    width: 280px;
+    height: 280px;
+    object-fit: fill;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    border: 10px solid #d7ba5b88;
+    transition: box-shadow 200ms ease;
+    cursor: pointer;
+}
+
+.product .img:hover
+{
+    box-shadow: 0px 0px 15px 3px rgb(126, 126, 126);
+}
+
+.product .title
+{
+    text-align: left;
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.product .title:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.product .price
+{
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+}
+
+
+
+
+
+.about-text
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    width: 40%;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.about-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.about-right-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image
+{
+    width: 400px;
+    height: auto;
+    border: 10px solid #d7ba5b88;
+}
+
+.about-button
+{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+
+
+.adventure-section h2
+{
+    margin-bottom: 0px;
+}
+

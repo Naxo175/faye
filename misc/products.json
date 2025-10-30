@@ -1,0 +1,56 @@
+[
+    {
+        "id": "moutarde",
+        "img": "moutarde.png",
+        "title": "Moutarde",
+        "price": 2,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "category": "moutarde",
+        "popular": true
+    },
+    {
+        "id": "bus",
+        "img": "Hess FAYE.png",
+        "title": "Hess",
+        "price": 2.5,
+        "description": "ROTOFIL",
+        "category": "goodies",
+        "popular": true
+    },
+    {
+        "id": "rotofile",
+        "img": "Rotofile FAYE.png",
+        "title": "Rotofil",
+        "price": 2,
+        "description": "Ceci est un très bon rotofil pour vos besoins quotidiens.",
+        "category": "goodies",
+        "popular": true
+    },
+    {
+        "id": "tronconneuse",
+        "img": "Tronconneuse FAYE.png",
+        "title": "Tronçonneuse",
+        "price": 2,
+        "description": "Ceci est une tronçonneuse puissante et fiable.",
+        "category": "goodies",
+        "popular": true
+    },
+    {
+        "id": "debroussailleuse",
+        "img": "Debroussailleuse FAYE.png",
+        "title": "Débroussailleuse",
+        "price": 2,
+        "description": "Ceci est une débroussailleuse efficace pour vos travaux de jardinage.",
+        "category": "goodies",
+        "popular": false
+    },
+    {
+        "id": "taille-haie",
+        "img": "Taille-haie FAYE.png",
+        "title": "Taille-haie",
+        "price": 2,
+        "description": "Ceci est un taille-haie précis pour entretenir vos haies.",
+        "category": "goodies",
+        "popular": false
+    }
+]

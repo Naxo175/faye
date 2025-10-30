@@ -1,0 +1,50 @@
+.product
+{
+    width: 300px;
+    height: 400px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product .img
+{
+    width: 280px;
+    height: 280px;
+    object-fit: fill;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    border: 10px solid #d7ba5b88;
+    transition: box-shadow 200ms ease;
+    cursor: pointer;
+}
+
+.product .img:hover
+{
+    box-shadow: 0px 0px 15px 3px rgb(126, 126, 126);
+}
+
+.product .title
+{
+    text-align: left;
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.product .title:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.product .price
+{
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap'); /* Fondamento */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto */
+
+/* Height used for the fixed header. Adjust this value if you change header contents. */
+:root {
+    --header-height: 140px;
+}
+
+/* Prevent page content from being hidden under the fixed header */
+body {
+    padding-top: var(--header-height);
+}
+
+.header
+{
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    background-color: black;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+.header img
+{
+    display: block;
+    margin: auto;
+    height: 100px;
+}
+
+.header ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0
+}
+
+.header li
+{
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.header a:hover
+{
+    color:rgb(226, 185, 70);
+    text-decoration: underline;
+}
