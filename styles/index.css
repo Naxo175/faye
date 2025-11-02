@@ -157,9 +157,17 @@ section h3
     margin: 40px;
 }
 
-.multifaye-section .container img
+.multifaye-section #multifaye-img
 {
     width: 500px;
+    object-fit: scale-down;
+    transform: rotate(10deg);
+    transition: transform 2s linear;
+}
+
+.multifaye-section #multifaye-img.rotating
+{
+    transform: rotate(370deg);
 }
 
 .multifaye-section .right-container

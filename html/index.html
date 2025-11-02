@@ -56,7 +56,22 @@
     <h2>S'ABONNER À MULTIFAYE</h2>
     
     <div class="container">
-      <img src="../images/produits/Multifaye.jpg">
+      <img id="multifaye-img" src="../images/produits/Multifaye.jpg" alt="Carte MultiFaye">
+
+      <script>
+        const img = document.getElementById("multifaye-img");
+
+        img.addEventListener("click", () => {
+          img.classList.add("rotating");
+
+          setTimeout(() => {
+            img.classList.remove("rotating");
+            img.style.transform = "rotate(10deg)";
+          }, 2000);
+        });
+      </script>
+
+
       <div class="right-container">
         <p class="p1">La carte MultiFaye, notre carte de fidélité, vous permettra d'obtenir pleins de réductions sur certains de nos produits.</p>
         <p class="p2"><strong>Jusqu'à 90% de réduction !</strong></p>
@@ -122,10 +137,10 @@
     <div class="main-container">
       <div class="container1">
         <p>Ouvert en 2021 suite à la pandémie de COVID 19, notre restaurant la Taverne de Laurent vous propose une gastronomie 4 étoiles. Entre saveurs locales et produits du terroir, la Taverne de Laurent saura satisfaire petits et grands.</p>
-        <img src="../images/decor/taverne1.jpg">
+        <img src="../images/decor/taverne1.jpg" alt="Taverne de Laurent">
       </div>
       <div class="container2">
-        <img src="../images/decor/taverne2.jpg">
+        <img src="../images/decor/taverne2.jpg" alt="Moutarde à la taverne de Laurent">
         <p>Découvrez nos plats préparés par notre chef Kamal Bouazid, arborés de nos moutardes préparées dans nos usines Périgourdine. Embarquez dans un tourbillon de saveurs auxquelles vous n’avez jamais goûté et savourez nos desserts mêlant parfaitement le raffinement et l’audace.</p>
       </div>
       <p class="note">Tous nos plats et condiments sont méticuleusement préparés avec des produits biologiques.</p>
@@ -137,10 +152,10 @@
     <h3>Le téléphone à la sauce Faye</h3>
 
     <div class="container">
-      <img src="../images/produits/goodies/FayePhone_face.png">
+      <img src="../images/produits/goodies/FayePhone_face.png" alt="Téléphone de face">
       <p>LE TÉLÉPHONE DE VOS PLAISIRS MULTIPLES.</p>
-      <img src="../images/produits/goodies/FayePhone_derriere.png">
-      <a href="boutique.html?id=fayephone">ACHETER</a>
+      <img src="../images/produits/goodies/FayePhone_derriere.png" alt="Arrière du téléphone">
+      <a href="product.html?id=fayephone">ACHETER</a>
     </div>
   </section>
 
