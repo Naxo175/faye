@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap'); /* Fondamento */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto */
+
+body
+{
+    margin: 0;
+}
+
+
+h2
+{
+    font-family: "Fondamento", sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+p
+{
+    font-family: "Roboto", cursive;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.form-link
+{
+    display: flex;
+    justify-content: center;
+}
+
+.form-link a
+{
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+    border-radius: 15px;
+    font-family: "Roboto", cursive;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.form-link a:hover
+{
+    text-decoration: underline;
+    background-color: #d6a913;
+}
+
+
+.fig-container
+{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.fig-container figure img
+{
+    width: 500px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.fig-container figure figcaption
+{
+    text-align: center;
+    font-family: "Roboto Condensed", cursive;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.voiture-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.voiture-container h3
+{
+    font-family: "Roboto", cursive;
+    font-size: 40px;
+}
+
+.voiture-container img
+{
+    width: 700px;
+    border: 5px solid black;
+    border-radius: 20px;
+}

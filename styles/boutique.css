@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap'); /* Fondamento */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+}
+
+.boutique-container
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.categories-sidebar
+{
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.categories-sidebar h2
+{
+    color: black;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.categories-sidebar a
+{
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.categories-sidebar a:hover
+{
+    text-decoration: underline;
+    /* transform: scale(1.05); */
+    transform: translateX(5px);
+}
+
+.products-sections
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 180px;
+    width: 1300px;
+}
+
+.category-title
+{
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+}
+
+.products-container
+{
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: left;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+hr
+{
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid #3e3e3e;
+    margin: 20px;
+}

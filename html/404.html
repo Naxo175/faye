@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La moutarde Faye</title>
+  <link rel="icon" href="../images/logos/FAYE.ico">
+
+  <link rel="stylesheet" href="../styles/404.css">
+
+  <link rel="stylesheet" href="../styles/header.css">
+  <script src="../scripts/loadHeader.js"></script>
+  
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="error-container">
+        <a id="img-button"><img src="../images/icons/moutarde_sad.png" alt="Icône d'erreur" class="error-icon" id="error-icon"></a>
+        <script>
+            const img_btn = document.getElementById("img-button");
+            img_btn.onclick = () => {
+                const iframe = document.querySelector(".iframe-container");
+                iframe.style.display = "inline";
+            };
+        </script>
+
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Oups ! La page que vous recherchez est introuvable.</p>
+
+        <a href="../html/index.html" class="index-button" id="index-button">Retour à l'accueil</a>
+        <script>
+            const img = document.getElementById("error-icon");
+            const btn = document.getElementById("index-button");
+
+            btn.addEventListener("mouseenter", () => {
+                img.src = "../images/icons/moutarde_happy.png";
+            });
+            btn.addEventListener("mouseleave", () => {
+                img.src = "../images/icons/moutarde_sad.png";
+            });
+
+        </script>
+
+        <div class="iframe-container">
+            <iframe title="chromeDino" class="chrome-dino" src="https://chromedino.com/" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
+        </div>
+    </div>
+</body>

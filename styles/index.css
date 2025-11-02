@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto Condensed */
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap'); /* Fondamento */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto */
+
+body
+{
+    background-image: url("../images/decor/Decor1.png");
+    margin: 0;
+}
+
+
+section
+{
+    background-color: white;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+section h2
+{
+    text-align: center;
+    font-family: "Fondamento", cursive;
+    font-size: 42.1px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+section h3
+{
+    text-align: center;
+    font-family: "Fondamento", cursive;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.adventure-section h2,
+.phone-section h2
+{
+    margin-bottom: 0px;
+}
+
+
+
+.slogan-container
+{
+    margin-top: 65vh;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.slogan
+{
+    color: #d6a913;
+    font-family: "Fondamento", cursive;
+    font-size: 70px;
+    margin: 0;
+}
+
+.slogan-sub
+{
+    color: rgb(214, 115, 22);
+    font-family: "Fondamento", cursive;
+    font-size: 30px;
+    margin: 0;
+}
+
+
+
+
+.main-products-container
+{
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.all-products-button-container
+{
+    text-align: center;
+}
+
+.all-products-button-container a
+{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    padding: 20px;
+    margin: 50px;
+}
+
+
+.product
+{
+    width: 300px;
+    height: 400px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product .img
+{
+    width: 280px;
+    height: 280px;
+    object-fit: fill;
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    border: 10px solid #d7ba5b88;
+    transition: box-shadow 200ms ease;
+    cursor: pointer;
+}
+
+.product .img:hover
+{
+    box-shadow: 0px 0px 15px 3px rgb(126, 126, 126);
+}
+
+.product .title
+{
+    text-align: left;
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.product .title:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.product .price
+{
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    margin-top: 0px;
+}
+
+
+
+.multifaye-section .container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin: 40px;
+}
+
+.multifaye-section .container img
+{
+    width: 500px;
+}
+
+.multifaye-section .right-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.multifaye-section p
+{
+    font-family: "Roboto", cursive;
+    font-size: 30px;
+}
+
+.multifaye-section .p2
+{
+    color: red;
+    text-align: center;
+    font-size: 40px;
+}
+
+.multifaye-section .p3
+{
+    color: rgb(0, 0, 126);
+}
+
+.multifaye-section audio
+{
+    align-self: flex-end;
+}
+
+.multifaye-section a
+{
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", cursive;
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+}
+
+
+
+.about-text
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    width: 40%;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.about-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.about-right-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-image
+{
+    width: 400px;
+    height: auto;
+    border: 10px solid #d7ba5b88;
+}
+
+.about-button
+{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+
+.adventure-section .new-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.adventure-section span.new
+{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.containers
+{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 50px;
+    padding: 20px;
+    background-color: #d6a913;
+    border-radius: 10px;
+}
+
+.containers div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adventure-section p 
+{
+    font-family: "Roboto", cursive;
+    font-size: 20px;
+    text-align: justify;
+    max-width: 700px;
+}
+
+.adventure-section img
+{
+    width: 500px;
+    height: auto; /* Assure le bon ratio de l'image */
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.taverne-section .main-container
+{
+    background-color: rgb(139, 73, 28);
+    padding: 30px;
+    margin: 70px;
+    margin-top: 0;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.taverne-section .container1,
+.taverne-section .container2
+{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.taverne-section .container1
+{
+    justify-content: flex-end;
+}
+
+.taverne-section .container2
+{
+    justify-content: flex-start;
+}
+
+.taverne-section .container1 p,
+.taverne-section .container2 p
+{
+    font-family: "Roboto", cursive;
+    font-size: 30px;
+    width: 600px;
+}
+
+.taverne-section .container1 img,
+.taverne-section .container2 img
+{
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.note
+{
+    font-size: 20px;
+    font-family: "Roboto Condensed", cursive;
+}
+
+
+.phone-section .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.phone-section .container p
+{
+    font-family: "Roboto", cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.phone-section .container img
+{
+    width: 500px;
+    height: 500px;
+}
+
+.phone-section .container a
+{
+    background-color: black;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Roboto", cursive;
+    color: white;
+}
+
+.phone-section .container a:hover
+{
+    text-decoration: underline;
+}

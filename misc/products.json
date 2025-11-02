@@ -1,0 +1,228 @@
+[
+    {
+        "id": "moutarde_originale",
+        "img": "moutardes/moutarde_originale.png",
+        "title": "Moutarde - L'Originale",
+        "price": "7,99€",
+        "description": "La moutarde classique au goût authentique et savoureux.",
+        "category": "moutarde",
+        "popular": true
+    },
+    {
+        "id": "moutarde_pimentee",
+        "img": "moutardes/moutarde_pimentee.png",
+        "title": "Moutarde - Pimentée",
+        "price": "7,99€",
+        "description": "Notre moutarde pimentée ajoute une touche de feu à vos plats préférés.",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_betteraves",
+        "img": "moutardes/moutarde_betteraves.png",
+        "title": "Moutarde - Goût Betteraves",
+        "price": "7,99€",
+        "description": "Les betteraves apportent une douceur terreuse unique à cette moutarde.",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_cornichons",
+        "img": "moutardes/moutarde_cornichons.png",
+        "title": "Moutarde Cornichons",
+        "price": "7,99€",
+        "description": "Les corcnichons et la moutarde : on n'avait pas vu un duo aussi délicieux depuis bien longtemps !",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_halloween-citrouilles",
+        "img": "moutardes/moutarde_halloween-citrouilles.png",
+        "title": "Moutarde - Halloween!!! Gôut Citrouilles",
+        "price": "<s>7,99€€</s> <strong>10,95€</strong>",
+        "description": "BOUH ! Transformez vos plats en véritables délices ensorcelées avec cette moutarde aux citrouilles.<br>Édition limitée - disponible jusqu'au 14/11/2025<br>",
+        "category": "moutarde",
+        "popular": true
+    },
+    {
+        "id": "moutarde_cepes",
+        "img": "moutardes/moutarde_cepes.png",
+        "title": "Moutarde - Goût Cèpes",
+        "price": "8,99€",
+        "description": "La douceur d'automne vient se glisser dans vos plats, grâce à nos cèpes en provenance de la forêt des Vaseix de Limoges.",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_special-fetes",
+        "img": "moutardes/moutarde_special-fetes.png",
+        "title": "Moutarde - Spécial Fêtes",
+        "price": "10,99€",
+        "description": "Mettez l'ambiance dans vos soirées avec cette moutarde conçue spécialement pour les fêtes !",
+        "category": "moutarde",
+        "popular": true
+    },
+    {
+        "id": "moutarde_gazon",
+        "img": "moutardes/moutarde_gazon.png",
+        "title": "Moutarde - Goût Gazon",
+        "price": "13,99€",
+        "description": "L'odeur de l'herbe de votre jardin vient jusque dans vos plats ! (Cette phrase n'a aucun sens)",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_mystere",
+        "img": "moutardes/moutarde_mystere.png",
+        "title": "Moutarde - Goût Mystère",
+        "price": "23,99€",
+        "description": "Mais qu'est-ce qui peut bien se cacher derrière ce goût Mystère ? À vous de le découvrir !<br>Et jusqu'au 03/12/2025, tentez de remporter un voyage d'une semaine à Trouville-sur-Mer tous frais payés*, en devinant les ingrédients qui composent cette mystérieuse moutarde.",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_citron-hibiscus",
+        "img": "moutardes/moutarde_citron-hibiscus.png",
+        "title": "Moutarde - Goût Citron Hibiscus",
+        "price": "8,49€",
+        "description": "Le citron et l'hibsicus font alliance pour donner à vos papilles une expérience hors du commun.",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_marshmallow",
+        "img": "moutardes/moutarde_marshmallow.png",
+        "title": "Moutarde - Goût Marshmallow",
+        "price": "7,99€",
+        "description": "Du sucre dans la moutarde ?! Certes ambitieux, mais surtout exquis.",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_karine-lemarchand",
+        "img": "moutardes/moutarde_karine-lemarchand.png",
+        "title": "Moutarde - Goût Karine Lemarchand",
+        "price": "41,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_a-lancienne",
+        "img": "moutardes/moutarde_a-lancienne.png",
+        "title": "Moutarde - À l'ancienne",
+        "price": "10,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_biere-brune",
+        "img": "moutardes/moutarde_biere-brune.png",
+        "title": "Moutarde - Goût Bière brune",
+        "price": "10,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_sans-plomb-98",
+        "img": "moutardes/moutarde_sans-plomb-98.png",
+        "title": "Moutarde - Goût Sans plomb 98",
+        "price": "13,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_curry",
+        "img": "moutardes/moutarde_curry.png",
+        "title": "Moutarde - Goût Curry",
+        "price": "10,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_fromage-du-jura",
+        "img": "moutardes/moutarde_fromage-du-jura.png",
+        "title": "Moutarde - Goût Fromage du Jura",
+        "price": "10,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_ciment",
+        "img": "moutardes/moutarde_ciment.png",
+        "title": "Moutarde - Goût Ciment",
+        "price": "11,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_courgettes",
+        "img": "moutardes/moutarde_courgettes.png",
+        "title": "Moutarde - Goût Courgettes",
+        "price": "10,99€",
+        "description": "WORK IN PROGRESS",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_multipla",
+        "img": "moutardes/moutarde_multipla.png",
+        "title": "Moutarde - Goût Multipla",
+        "price": "17,99€",
+        "description": "La voiture mythique du constructeur Fiat fait son grand retour... en pot de moutarde ! Découvrez le Multipla comme vous ne l'avez jamais imaginé.",
+        "category": "moutarde",
+        "popular": false
+    },
+    {
+        "id": "moutarde_coca-cola",
+        "img": "moutardes/moutarde_coca-cola.png",
+        "title": "Moutarde - Goût Coca-Cola",
+        "price": "10,99€",
+        "description": "La marque locale <em>Coca-Cola</em>® se joint à nous pour créer la moutarde ultime !",
+        "category": "moutarde",
+        "popular": false
+    },
+
+    {
+        "id": "tracteur",
+        "img": "goodies/Tracteur-tondeuse_transparent.png",
+        "title": "Tracteur-tondeuse",
+        "price": "1599,99€",
+        "description": "Ce tracteur-tondeuse aux couleurs de Faye saura parfaire votre jardin pour un terrain excellement taillé.",
+        "category": "goodies",
+        "popular": false
+    },
+    {
+        "id": "fayephone",
+        "img": "goodies/FayePhone.png",
+        "title": "FayePhone",
+        "price": "749,99€",
+        "description": "Le téléphone qui va révolutionner le monde. Maintenant disponible chez Faye.",
+        "category": "goodies",
+        "popular": true
+    },
+    {
+        "id": "tshirt",
+        "img": "goodies/tshirt.png",
+        "title": "Tees-shirt Homme jaune sport",
+        "price": "23,99€",
+        "description": "Un tee-shirt magnifique de sport qui porte l'intemporel logo Faye ainsi qu'une photographie de notre jardin moutardier.",
+        "category": "goodies",
+        "popular": false
+    },
+    {
+        "id": "coque",
+        "img": "goodies/Coque.png",
+        "title": "Coque de téléphone",
+        "price": "15,99€",
+        "description": "Cette coque, arborée de nos chers partenaires ainsi que de notre carte de fidélité, s'adapte à votre téléphone pour ainsi épouser sa taille et sa forme, et mieux le protéger en cas de chutes.",
+        "category": "goodies",
+        "popular": false
+    }
+]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/product.css">
+  <title>La moutarde Faye</title>
+  <link rel="icon" href="../images/logos/FAYE.ico">
+
+
+  <link rel="stylesheet" href="../styles/header.css">
+  <script src="../scripts/loadHeader.js"></script>
+
+  <link rel="stylesheet" href="../styles/virtual_assistant.css">
+  <script src="../scripts/loadVirtualAssistant.js"></script>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    
+    fetch("../misc/products.json")
+      .then(response => response.json())
+      .then(products => {
+        const product = products.find(p => p.id === id);
+        if (!product) {
+          document.getElementById("product-title").innerText = "Produit introuvable.";
+          return;
+        }
+
+        document.getElementById("product-img").src = `../images/produits/${product.img}`;
+        document.getElementById("product-title").innerText = product.title;
+        document.getElementById("product-price").innerHTML = product.price;
+        document.getElementById("product-description").innerHTML = product.description;
+        if (product.popular) {
+          document.getElementById("popular-product").style.display = "inline";
+        } else {
+          document.getElementById("popular-product").style.display = "none";
+        }
+      });
+
+  </script>
+  
+
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <div id="virtual-assistant"></div>
+
+  <div class="product-container">
+    <img id="product-img" alt="Produit">
+    
+    <div class="product-info">
+      <div class="product-title-container">
+        <h1 id="product-title">Nom du produit</h1>
+        <span id="popular-product">POPULAIRE</span>
+      </div>
+      <p id="product-description">Description du produit...</p>
+      <h3 id="product-price">Prix: XX.XX€</h3>
+      <a id="buy-button" href="404.html">Acheter</a>
+    </div>
+  </div>
+
+</body>

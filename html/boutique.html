@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La moutarde Faye</title>
+  <link rel="icon" href="../images/logos/FAYE.ico">
+
+  <link rel="stylesheet" href="../styles/boutique.css">
+  <link rel="stylesheet" href="../styles/element_product.css">
+
+  <link rel="stylesheet" href="../styles/header.css">
+  <script src="../scripts/loadHeader.js"></script>
+
+  <script src="../scripts/loadProducts.js"></script>
+  <script>
+    loadProductsByCategory()
+  </script>
+
+  <link rel="stylesheet" href="../styles/virtual_assistant.css">
+  <script src="../scripts/loadVirtualAssistant.js"></script>
+
+</head>
+<body>
+  
+  <div id="header"></div>
+
+  <div id="virtual-assistant"></div>
+
+  <div class="boutique-container">
+    <div class="categories-sidebar">
+      <h2>CATÉGORIES</h2>
+      <a href="#moutardes" class="section-link">MOUTARDES</a>
+      <a href="#goodies" class="section-link">GOODIES</a>
+    </div>
+
+    <div class="products-sections">
+      <section id="moutardes">
+        <h2 class="category-title">MOUTARDES</h2>
+        <div class="products-container" id="moutarde-products-container">
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="goodies">
+        <h2 class="category-title">GOODIES</h2>
+        <div class="products-container" id="goodies-products-container">
+        </div>
+      </section>
+    </div>
+    
+    
+    
+</body>
+</html>
