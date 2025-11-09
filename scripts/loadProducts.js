@@ -1,7 +1,7 @@
 async function loadProductsByCategory() {
   try {
-    const response = await fetch('../misc/products.json'); // charge le fichier JSON
-    const products = await response.json(); // parse en objet JS
+    const response = await fetch('../misc/products.json'); // Récupérer le fichier JSON
+    const products = await response.json(); // Transformer en JSON
 
 
     products.forEach(product => {
