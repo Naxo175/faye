@@ -121,7 +121,7 @@
         "img": "moutardes/moutarde_biere-brune.png",
         "title": "Moutarde - Goût Bière brune",
         "price": "10,99€",
-        "description": "WORK IN PROGRESS",
+        "description": "Cette moutarde plaira aux amateurs de bière, une alliance parfaite entre la douceur de notre moutarde et le corsé d'une bière de la Maison Michard.",
         "category": "moutarde",
         "popular": false
     },
@@ -130,7 +130,7 @@
         "img": "moutardes/moutarde_sans-plomb-98.png",
         "title": "Moutarde - Goût Sans plomb 98",
         "price": "<s>13,99€</s> <strong>13,98€</strong>",
-        "description": "WORK IN PROGRESS",
+        "description": "Aussi ubuesque soit-elle, le Sans-Plomb 98 saura ravir vos automobiles et vos papilles.",
         "category": "moutarde",
         "popular": false
     },
@@ -139,7 +139,7 @@
         "img": "moutardes/moutarde_curry.png",
         "title": "Moutarde - Goût Curry",
         "price": "10,99€",
-        "description": "WORK IN PROGRESS",
+        "description": "Une moutarde douce et savoureuse qui apporte une touche de peps à notre gamme.",
         "category": "moutarde",
         "popular": false
     },
