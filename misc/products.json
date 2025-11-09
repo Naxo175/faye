@@ -129,7 +129,7 @@
         "id": "moutarde_sans-plomb-98",
         "img": "moutardes/moutarde_sans-plomb-98.png",
         "title": "Moutarde - Goût Sans plomb 98",
-        "price": "13,99€",
+        "price": "<s>13,99€</s> <strong>13,98€</strong>",
         "description": "WORK IN PROGRESS",
         "category": "moutarde",
         "popular": false
@@ -221,6 +221,15 @@
         "img": "goodies/Coque.png",
         "title": "Coque de téléphone",
         "price": "15,99€",
+        "description": "Cette coque, arborée de nos chers partenaires ainsi que de notre carte de fidélité, s'adapte à votre téléphone pour ainsi épouser sa taille et sa forme, et mieux le protéger en cas de chutes.",
+        "category": "goodies",
+        "popular": false
+    },
+    {
+        "id": "multipla",
+        "img": "goodies/Multipla.png",
+        "title": "Multipla Faye",
+        "price": "135 783,99 francs",
         "description": "Cette coque, arborée de nos chers partenaires ainsi que de notre carte de fidélité, s'adapte à votre téléphone pour ainsi épouser sa taille et sa forme, et mieux le protéger en cas de chutes.",
         "category": "goodies",
         "popular": false
