@@ -148,7 +148,7 @@
         "img": "moutardes/moutarde_fromage-du-jura.png",
         "title": "Moutarde - Goût Fromage du Jura",
         "price": "10,99€",
-        "description": "WORK IN PROGRESS",
+        "description": "Du Jura au Périgord, cette moutarde saura vous faire voyager dans un tourbillon de saveurs avec un mélange unique de notre délicieuse moutarde et de ce délicieux fromage qui ravira petits et grands.",
         "category": "moutarde",
         "popular": false
     },
@@ -157,7 +157,7 @@
         "img": "moutardes/moutarde_ciment.png",
         "title": "Moutarde - Goût Ciment",
         "price": "11,99€",
-        "description": "WORK IN PROGRESS",
+        "description": "Née d'une collaboration entre les ateliers FAYE et Salesse BTP, cette moutarde quelque peu originale plaira aux amateurs de ciment. Elle a su trouver sa place sur les chantiers du Limousin.",
         "category": "moutarde",
         "popular": false
     },
@@ -166,7 +166,7 @@
         "img": "moutardes/moutarde_courgettes.png",
         "title": "Moutarde - Goût Courgettes",
         "price": "10,99€",
-        "description": "WORK IN PROGRESS",
+        "description": "En alliant l'amertume de la courgette avec la douceur de notre moutarde à l'Ancienne, nos ateliers ont osé créer ce fleuron de notre gamme, parfait pour les plus aventureux d'entre vous.",
         "category": "moutarde",
         "popular": false
     },
@@ -230,7 +230,7 @@
         "img": "goodies/Multipla.png",
         "title": "Multipla Faye",
         "price": "135 783,99 francs",
-        "description": "Cette coque, arborée de nos chers partenaires ainsi que de notre carte de fidélité, s'adapte à votre téléphone pour ainsi épouser sa taille et sa forme, et mieux le protéger en cas de chutes.",
+        "description": "Ce Fiat Multipla est disponible en plusieurs motorisations.<br>Essence : 1,6 litre 16v 92/103 ch<br>Diesel : 1,9 JTD 105/110/115/120<br>Dans la limite des stocks disponibles, sous réserve d'acceptation de FAYE Corporation.<br>LLD 37 mois 40 000 km.<br>Au quotidien prenez les transports en commun",
         "category": "goodies",
         "popular": false
     }

@@ -330,6 +330,7 @@ section h3
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
 }
 
 .taverne-section .container1,
@@ -367,10 +368,19 @@ section h3
     border-radius: 10px;
 }
 
-.note
+.taverne-section .ab-note
 {
     font-size: 20px;
     font-family: "Roboto Condensed", cursive;
+}
+
+.taverne-section .ab-icon
+{
+    position: absolute;
+    bottom: 10px; /* distance depuis le bas du conteneur */
+    right: 10px;  /* distance depuis le bord droit */
+    width: 60px;  /* taille optionnelle */
+    height: auto;
 }
 
 
