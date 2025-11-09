@@ -26,7 +26,7 @@ let conversationHistory = JSON.parse(localStorage.getItem("conversationHistory")
 ]; // Récupérer l'historique de conversation dans le stockage local du client OU le créer
 
 
-const chatMessages = document.getElementById("chat-messages"); // Réinsérer les messages dans le chat après changement de la page
+const chatMessages = document.getElementById("chat-messages"); // Réinsérer les messages dans le chat après chargement de la page
 
 conversationHistory.forEach(m => { // Pour chaque élément de la conversation
   const className = m.role === "user" ? "user-message" : "assistant-message"; // Si le rôle du message est "user", la classe est "user-message", sinon "assistant-message"
