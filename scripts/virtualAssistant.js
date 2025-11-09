@@ -1,22 +1,21 @@
-import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai";
+import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai"; // Importer les trucs de Gemini
 
-// ⚠️ (ta clé API en dur juste pour tester — à cacher ensuite côté serveur)
-const ai = new GoogleGenerativeAI("AIzaSyB5X_UaKbdFk2jUantRrX7bFQOLhteiESg");
-const model = ai.getGenerativeModel({ model: "gemini-2.0-flash" });
+const ai = new GoogleGenerativeAI("AIzaSyB5X_UaKbdFk2jUantRrX7bFQOLhteiESg"); // Créer l'IA
+const model = ai.getGenerativeModel({ model: "gemini-2.0-flash" }); // Choisir le modèle
 
 
 // Ouvrir/fermer l'assistant virtuel
-const button = document.querySelector(".virtual-assistant .button");
-const chatBox = document.getElementById("chat-box");
-button.onclick = () => {
+const button = document.querySelector(".virtual-assistant .button"); // Récupérer le bouton de l'assitant virtuel
+const chatBox = document.getElementById("chat-box"); // Récupérer la boite de la discussion
+button.onclick = () => { // Quand on clique sur le bouton
     if(chatBox.style.display === "flex") // Si la chat-box est ouverte
     {
-        chatBox.style.display = "none";
+        chatBox.style.display = "none"; // La fermer
     }
-    else
+    else // Sinon
     {
-        chatBox.style.display = "flex";
-        chatMessages.scrollTop = chatMessages.scrollHeight;
+        chatBox.style.display = "flex"; // L'ouvrir en display "flex"
+        chatMessages.scrollTop = chatMessages.scrollHeight; // Scroller tout en bas de la discsussion
     }
 };
 
@@ -24,29 +23,29 @@ button.onclick = () => {
 
 let conversationHistory = JSON.parse(localStorage.getItem("conversationHistory")) || [
   { role: "assistant", content: "Bonjour ! Comment puis-je vous aider aujourd'hui ?" }
-];
+]; // Récupérer l'historique de conversation dans le stockage local du client OU le créer
 
-// Réinsérer les messages dans le chat après changement de page
-const chatMessages = document.getElementById("chat-messages");
 
-conversationHistory.forEach(m => {
-  const className = m.role === "user" ? "user-message" : "assistant-message";
-  chatMessages.innerHTML += `<div class="message ${className}">${m.content}</div>`;
+const chatMessages = document.getElementById("chat-messages"); // Réinsérer les messages dans le chat après changement de la page
+
+conversationHistory.forEach(m => { // Pour chaque élément de la conversation
+  const className = m.role === "user" ? "user-message" : "assistant-message"; // Si le rôle du message est "user", la classe est "user-message", sinon "assistant-message"
+  chatMessages.innerHTML += `<div class="message ${className}">${m.content}</div>`; // Ajouter le message dans l'élément chatMessages
 });
 
 
 
 // Envoyer le message
-const userInput = document.getElementById("user-input");
-const sendMsgButton = document.getElementById("send-button");
+const userInput = document.getElementById("user-input"); // Récupérer l'input de l'utilisateur
+const sendMsgButton = document.getElementById("send-button"); // Récupérer le bouton pour envoyer le message
 
-userInput.addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-        sendMessage(userInput.value);
+userInput.addEventListener("keypress", function(event) { // Quand une touche est pressée
+    if (event.key === "Enter") { // Si la touche est Entrée
+        sendMessage(userInput.value); // Envoyer le message avec la valeur du userInput
 }});
 
-sendMsgButton.onclick = () => {
-    sendMessage(userInput.value);
+sendMsgButton.onclick = () => { // Quand le bouton pour envoyer le message est pressé
+    sendMessage(userInput.value); // Envoyer le message avec la valeur du userInput
 };
 
 
@@ -55,12 +54,12 @@ sendMsgButton.onclick = () => {
 
 
 async function ask(message) {
-  const products = await fetch("../misc/products.json").then(r => r.json());
+  const products = await fetch("../misc/products.json").then(r => r.json()); // Récupérer les produits dans products.json
 
-  conversationHistory.push({ role: "user", content: message });
-  localStorage.setItem("conversationHistory", JSON.stringify(conversationHistory));
+  conversationHistory.push({ role: "user", content: message }); // Ajouter le message de l'utilisateur dans conversationHistory
+  localStorage.setItem("conversationHistory", JSON.stringify(conversationHistory)); // Mettre à jour le converSationHistory dans le stockage local
 
-
+  // Prompt à envoyer à l'IA
   const prompt = `
 Tu es l'assistant virtuel du site : la moutarde Faye, dont le slogan est "Il n'y a que Faye qui faille !".
 C'est un site de vente en ligne de produits alimentaires artisanaux français, principalement de la moutarde. Mais nous vendons aussi quelques autres produits dérivés.
@@ -124,14 +123,14 @@ ${conversationHistory.map(m => `${m.role === "user" ? "Utilisateur" : "Assistant
 Réponds maintenant à l'utilisateur en te basant sur le message suivant : "${message}"
   `;
 
-  const result = await model.generateContent(prompt);
-  const reply = result.response.text();
+  const result = await model.generateContent(prompt); // Résultat de l'IA
+  const reply = result.response.text(); // Réponse de l'IA
 
-  console.log(prompt)
+  console.log(prompt);
   console.log(reply);
 
-  conversationHistory.push({ role: "assistant", content: reply });
-  localStorage.setItem("conversationHistory", JSON.stringify(conversationHistory));
+  conversationHistory.push({ role: "assistant", content: reply }); // Ajouter le message de l'assistant au conversationHistory
+  localStorage.setItem("conversationHistory", JSON.stringify(conversationHistory)); // Mettre à jour le converSationHistory dans le stockage local
 
   return reply;
 }
@@ -139,39 +138,39 @@ Réponds maintenant à l'utilisateur en te basant sur le message suivant : "${me
 
 async function sendMessage(message)
 {
-    if(message === "") return;
+    if(message === "") return; // Si le message est vide, ne rien faire
 
     // Effacer la conversation
-    if (message.trim().toLowerCase() === "effacer historique") {
+    if (message.trim().toLowerCase() === "effacer historique") { // Si le message est "effacer historique"
         conversationHistory = [
             { role: "assistant", content: "Bonjour ! Comment puis-je vous aider ?" }
-        ];
-        localStorage.setItem("conversationHistory", JSON.stringify(conversationHistory));
+        ]; // Réinitialiser l'historique de conversation
+        localStorage.setItem("conversationHistory", JSON.stringify(conversationHistory)); // Mettre à jour le converSationHistory dans le stockage local
 
-        chatMessages.innerHTML = `<div class="message assistant-message">Bonjour ! Comment puis-je vous aider ?</div>`;
-        userInput.value = "";
-        return;
+        chatMessages.innerHTML = `<div class="message assistant-message">Bonjour ! Comment puis-je vous aider ?</div>`; // Réinitialiser les messages du chat
+        userInput.value = ""; // Réinitialiser le userInput
+        return; // Arrêter la fonction
     }
 
-    chatMessages.innerHTML += `<div class="message user-message">${message}</div>`;
-    userInput.value = "";
-    chatMessages.scrollTop = chatMessages.scrollHeight;
+    chatMessages.innerHTML += `<div class="message user-message">${message}</div>`; // Ajouter le message au chat
+    userInput.value = ""; // Réinitialiser le userInput
+    chatMessages.scrollTop = chatMessages.scrollHeight; // Scroller vers le bas
 
-    sendMsgButton.disabled = true;
-    sendMsgButton.textContent = "Envoi en cours...";
+    sendMsgButton.disabled = true; // Désactiver le bouton d'envoi du message
+    sendMsgButton.textContent = "Envoi en cours..."; // Changer le texte du bouton d'envoie du message
 
     try {
-        const reply = await ask(message);
-        chatMessages.innerHTML += `<div class="message assistant-message">${reply}</div>`;
-    } catch (error) {
+        const reply = await ask(message); // Demander à l'IA
+        chatMessages.innerHTML += `<div class="message assistant-message">${reply}</div>`; // Afficher le message de l'assistant une fois la réponse récupérée
+    } catch (error) { // En cas d'erreur :
         console.error("Erreur lors de la génération de la réponse :", error);
-        chatMessages.innerHTML += `<div class="message assistant-message error">Erreur : ${error.message}</div>`;
+        chatMessages.innerHTML += `<div class="message assistant-message error">Erreur : ${error.message}</div>`; // Afficher l'erreur en tant que message
     } finally {
         sendMsgButton.disabled = false;
         sendMsgButton.textContent = "Envoyer";
     }
 
-    chatMessages.scrollTop = chatMessages.scrollHeight;
+    chatMessages.scrollTop = chatMessages.scrollHeight; // Scroller vers le bas
 }
 
 

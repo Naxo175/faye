@@ -76,7 +76,7 @@
         "img": "moutardes/moutarde_mystere.png",
         "title": "Moutarde - Goût Mystère",
         "price": "23,99€",
-        "description": "Mais qu'est-ce qui peut bien se cacher derrière ce goût Mystère ? À vous de le découvrir !<br>Et jusqu'au 03/12/2025, tentez de remporter un voyage d'une semaine à Trouville-sur-Mer tous frais payés*, en devinant les ingrédients qui composent cette mystérieuse moutarde.",
+        "description": "Mais qu'est-ce qui peut bien se cacher derrière ce goût Mystère ? À vous de le découvrir !<br>Et jusqu'au 03/12/2025, tentez de remporter un voyage d'une semaine à Trouville-sur-Mer tous frais payés*, en devinant les ingrédients qui composent cette mystérieuse moutarde.<br></p><p style=\"font-size: 10px;\">*Dans la limite de 10€ de frais",
         "category": "moutarde",
         "popular": false
     },
@@ -103,7 +103,7 @@
         "img": "moutardes/moutarde_karine-lemarchand.png",
         "title": "Moutarde - Goût Karine Lemarchand",
         "price": "41,99€",
-        "description": "WORK IN PROGRESS",
+        "description": "Une moutarde colorée aux deux saveurs : soit une mayonnaise à la moutarde du Périgord à la fois douce et savoureuse, soit une moutarde extra-forte au piment oiseau.",
         "category": "moutarde",
         "popular": false
     },
@@ -112,7 +112,7 @@
         "img": "moutardes/moutarde_a-lancienne.png",
         "title": "Moutarde - À l'ancienne",
         "price": "10,99€",
-        "description": "WORK IN PROGRESS",
+        "description": "Un savoir ancestral qui se perpétue au sein de cette moutarde pleine de saveur.",
         "category": "moutarde",
         "popular": false
     },
