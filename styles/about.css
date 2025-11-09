@@ -31,7 +31,6 @@ h2
 
 .about-pages li:hover
 {
-    /* transform: scale(5); */
     transform: translateX(10px);
 }
 

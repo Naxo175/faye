@@ -47,8 +47,8 @@
 
     <div class="all-products-button-container">
       <a href="boutique.html">VOIR TOUS LES PRODUITS</a>
-
     </div>
+
   </section>
 
   <section class="multifaye-section">
@@ -59,15 +59,15 @@
       <img id="multifaye-img" src="../images/produits/Multifaye.jpg" alt="Carte MultiFaye">
 
       <script>
-        const img = document.getElementById("multifaye-img");
+        const img = document.getElementById("multifaye-img"); // Récupérer l'image
 
-        img.addEventListener("click", () => {
-          img.classList.add("rotating");
+        img.addEventListener("click", () => { // Quand l'utilisateur clique sur l'image
+          img.classList.add("rotating"); // Ajouter la classe "rotating" à l'image
 
-          setTimeout(() => {
-            img.classList.remove("rotating");
-            img.style.transform = "rotate(10deg)";
-          }, 2000);
+          setTimeout(() => { // Créer un timer ; quand le timer est écoulé :
+            img.classList.remove("rotating"); // Enlever la classe "rotating"
+            img.style.transform = "rotate(10deg)"; // Remettre l'image à 10 degrés de rotation
+          }, 2000); // Le timer dure 2000ms donc 2s
         });
       </script>
 
