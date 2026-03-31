@@ -1,6 +1,6 @@
 import { GoogleGenerativeAI } from "https://esm.run/@google/generative-ai"; // Importer les trucs de Gemini
 
-const ai = new GoogleGenerativeAI("AIzaSyB5X_UaKbdFk2jUantRrX7bFQOLhteiESg"); // Créer l'IA
+const ai = new GoogleGenerativeAI("AIzaSyAEQUZu-hpMvgSnuC5NvxLeKYD_sI2Kv_Q"); // Créer l'IA
 const model = ai.getGenerativeModel({ model: "gemini-2.0-flash" }); // Choisir le modèle
 
 
